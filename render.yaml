@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: movie-hunt-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: https://gowhathi04.github.io
+      - key: OMDB_API_KEY
+        sync: false

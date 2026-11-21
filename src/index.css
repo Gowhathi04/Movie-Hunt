@@ -1,0 +1,4 @@
+html { min-width: 360px; background: #050507; }
+body { margin: 0; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid #6d5cff; outline-offset: 3px; }
+::selection { color: #050507; background: #ff1744; }
