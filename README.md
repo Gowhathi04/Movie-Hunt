@@ -32,7 +32,7 @@ npm start
 The GitHub Actions workflow builds the frontend at `https://gowhathi04.github.io/Movie-Hunt/`.
 GitHub Pages hosts only static files, so movie search needs the Express API deployed separately.
 
-1. In GitHub, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
+1. The workflow will try to enable Pages automatically. If GitHub blocks it, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
 2. Deploy the API to Render using the included `render.yaml` blueprint. Add `OMDB_API_KEY` as a secret environment variable in Render; do not put it in GitHub or the frontend.
 3. In the Render service, set `FRONTEND_ORIGIN` to `https://gowhathi04.github.io`.
 4. After the Render service is live, add a GitHub repository variable named `VITE_API_BASE_URL` with the service URL, for example `https://movie-hunt-api.onrender.com`.
